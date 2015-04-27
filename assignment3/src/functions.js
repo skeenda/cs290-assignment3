@@ -12,9 +12,10 @@
 * @return {null} - 'useless'.
 */
 
-//your code here
-
-//end your code
+function uselessFunction(){
+	var useless = null;
+	return useless;
+}
 
 var bar = 'not a function';
 var barType = typeof bar;
@@ -29,9 +30,24 @@ var barType = typeof bar;
 * This should return false if any value in the array cannot be doubled.
 */
 
-//your code here
+bar = function (doubleArray){
+	var i;
+	for(i=0; i<doubleArray.length; i++){
+		if(!isNaN(doubleArray[i])){
+			doubleArray[i] *= 2;
+		}
+		else{
+			return false;
+		}
+	}
 
-//end your code
+	if(i == doubleArray.length){
+		return true;
+	}
+	else{
+		return false;
+	}
+};
 
 /**
 * Creates a new GitLog
@@ -65,6 +81,13 @@ function GitLog(hash, date, message) {
 * @return {array.<GitLog>} - return an array GitLog instances
 */
 
-//your code here
-
-//end your code
+function parseGit(logArray){
+	var i;
+	for(i = 0; i < logArray.length; i++){
+		GitLog[i]= new Object();
+		GitLog[i].hash = logArray[i].slice(0,7);
+		GitLog[i].date = new Date(logArray[i].slice(7,40));
+		GitLog[i].message = logArray[i].slice(40, logArray.lastIndexOf());
+	}
+	return GitLog;
+}

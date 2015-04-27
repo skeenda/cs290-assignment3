@@ -8,9 +8,9 @@
 * @return {object} - the object literal
 */
 
-function returnObjectLiteral() {
+function returnObjectLiteral(){
   //your code here
-  return undefined; //Modify ONLY this line
+  return {type: 'Goldfish', brand: 'Pepperidge Farm', flavor: 'Cheddar', count: 2000}; //Modify ONLY this line
   //end your code
 }
 
@@ -37,9 +37,49 @@ function returnObjectLiteral() {
 * received
 */
 
-//your code here
-
-//end your code
+function MessageLog(user){
+	this.user = user;
+	this.messageArray = [];
+	this.sent = [];
+	this.received= [];
+	this.totalNoSent = 0;
+	this.totalNoRecieved = 0;
+	//this.totalSent= totalSent;
+	//this.totalReceived = totalReceived;
+	this.logMessage = function(messageText, direction){
+		var i;
+		if(direction == 0){
+			this.totalNoSent++;
+			if(this.sent.length >= 5){
+				this.sent.pop();
+				this.sent.unshift(messageText);
+			}
+			else{
+				this.sent.unshift(messageText);
+			}
+		}
+		else if(direction == 1){
+			this.totalNoRecieved++;
+			if(this.received.length >= 5)
+				this.received.pop();
+				this.received.unshift(messageText);
+			}
+			else{
+				this.received.unshift(messageText);
+			}
+		}
+	this.getSentMessage = function(n){
+		if(n >= 0){
+			return this.sent[n];
+		}
+	}
+	this.totalReceived = function(){
+		return this.totalNoRecieved;
+	}
+	this.totalSent = function(){
+		return this.totalNoSent;
+	}
+}
 
 /**
 * Add a method to the MessageLog prototype:
@@ -47,7 +87,9 @@ function returnObjectLiteral() {
 * received.
 */
 //your code here
-
+MessageLog.prototype.lastReceivedMessage = function(){
+	return this.received[0];
+}
 //end your code
 
 /**
@@ -57,5 +99,8 @@ function returnObjectLiteral() {
 */
 
 //your code here
-
+var myLog = new MessageLog('BlackHatGuy');
+myLog.logMessage('foo', 1);
+myLog.logMessage('bar', 1);
+myLog.logMessage('baz', 1);
 //end your code
