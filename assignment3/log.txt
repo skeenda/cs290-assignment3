@@ -1,1 +1,66 @@
-You log goes in this  file.
+Wednesday 4/15/2015 6:15pm - Wednesday 4/15/2015 6:40pm
+~Read through the requirements for the assignment and then set up my git directory so for assignment 3. Cloned
+~over all of the data needed
+
+Thursday 4/16/2015 5:00pm - Thursday 4/16/2015 6:00pm
+~Ran through the pseudocode for the general idea of each of the files. Object.js took around half an hour of this time
+~Functions.js took around 20 while object.js took about 10
+
+Friday 4/17/2015 6:45pm - Friday 4/17/2015 8:30pm
+~Worked on and tested function.js, bar function was the most difficult in this file. 
+
+Friday 4/17/2015 9:30pm - Friday 4/17/2015 10:45pm
+~Tested function.js, debugged bar and parseGit. Got it to pass all of the tests needed.
+
+Saturday 4/18/2015 12:00pm - Saturday 4/18/2015 1:00pm
+~Coded variables.js. By far the easiest file to code, took me the longest to figure out that I needed
+~ to have three equals signs to make it not accept undefined
+
+Saturday 4/18/2015 1:00pm - Saturday 4/18/2015 1:30pm
+~Tested and debugged variables.js until it was finished and passed all of the tests.
+
+Sunday 4/19/2015 12:00pm - Sunday 4/19/2015 3:20pm
+~Coded through object.js. MessageLog took about 2 and a half hours of this time
+
+Sunday 4/19/2015 4:00pm - Sunday 4/19/2015 7:45pm
+~Debugged MessageLog until it worked correctly through the tests. Main problem was how I implemented
+~getSentMessage. Had to changed the Parameters to accept the correct things within the if 
+~ statement. Works correctly.
+
+
+
+PART 2:
+
+Monday 4/20/2015 5:00pm - Monday 4/19/2015 6:00pm
+~Read through the requirements and needs of the assignment and set up the git directory for assignment 3 par 2.
+
+Tuesday 4/21/2015 1:00pm~5:00pm
+~Wrote out the general idea and what needs to be done for the assignment, pseudocoded the gist.js all the way
+~through. I think that I have the general idea for what needs to be done. Started with 8 different functions,
+~narrowed it down so that I can use 3 if possible
+
+Wednesday 4/22/2015 5:00pm- 10:30pm
+~Began to write the code as needed. Started with the getGist function because I believe it will be the most difficult
+~As I worked through, noticed that I need to make some changes to the general idea of the whole thing.
+
+Thursday 4/23/2015 5:00pm- 9:45pm
+~Finally finished the getGist function, will probably need some good debugging done to it. Started working on
+~generate list function. Will have to add another function within to allow fr the button to work. Getting far more
+~difficult than I had originally thought.
+
+Friday 4/24/2015 12:00pm- 5:00pm
+~Finished generate_list, will probably also need some debugging. Also finished the window.onload function. This
+~was by far the easiest of them all.
+
+Saturday 4/25/2015 11:00am - 5:15pm
+~Wrote the html for the page. Decided to push off doing the css page. Started debugging the js page. There seems
+~to be a good amount of problems with it. Looked at the element of the page to find the issue. Still trying to figure
+~out why one of the variables isn't declared correctly.
+
+Sunday 4/26/2015 11:30am - 4:30pm
+~Fixed the problem with the list not showing up at all. Began to work on favorite and unfavorite removal. I am pretty sure
+~it is working correctly
+
+Sunday 4/27/2015 5:30pm - 8:00pm
+~Everything seems to be working correctly. Decided to do some css stuff. I used Comic Sans and I have
+~never been so happy.
