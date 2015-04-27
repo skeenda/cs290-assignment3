@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CS290 Assignment 3 part 3 </title>
+		<script src="gist.js"></script>
+		<link rel = "stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>AJAX assignment 3 part 2</h1>
+		
+		<div>
+			<label> Pick the number of pages that you wish to return, 30 results per page.</label>
+			<select id = 'page_amount'>
+				<option value = "1"> 1 page</option>
+				<option value = "2"> 2 page</option>
+				<option value = "3"> 3 page</option>
+				<option value = "4"> 4 page</option>
+				<option value = "5"> 5 page</option>
+			</select>
+		</div>
+		
+		<div>
+			<label>Pick a language </label>
+				<input id="JavaScript" type="checkbox" value ="JavaScript">JavaScript
+				<input id="Python" type="checkbox" value ="Python">Python
+				<input id="SQL" type="checkbox" value ="SQL">SQL
+				<input id="JSON" type="checkbox" value ="JSON">JSON
+		</div>
+		
+		<div>
+		<input type="button" value="Search" onclick="getGist()">
+		</div>
+		
+		<div>
+			<h2> Favourite Gist</h2>
+			<ul id = "favorite"></ul>
+			
+		</div>
+		
+		<div>
+			<h3>Result</h3>
+			<ol id = "result"></ol>
+		</div>
+	</body>
+</html>

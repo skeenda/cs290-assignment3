@@ -1,0 +1,29 @@
+.body{
+	margin-bottom: 100%;
+}
+
+div {
+	
+	width: 500px;
+}
+
+h1 {
+	color: red;
+}
+
+h2{
+	color: blue;
+}
+
+div > label{
+	color: black;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+div > input{
+	color: red;
+}
+
+h3 {
+	color: green;
+}
